@@ -1,13 +1,11 @@
 ---
-import Logo from "@/images/logo.svg"
 import { navigation } from "@/lib/navigation"
-import { Image } from "astro:assets"
 ---
 
 <nav class="navbar bg-base-300 py-5">
 	<div class="mx-auto w-11/12 md:w-10/12">
 		<div class="flex-1">
-			<Image src={Logo} height={50} alt="Logo" />
+			<img src="/src/images/logo.svg" class="h-14" alt="Logo" />
 		</div>
 		<ul class="menu menu-horizontal px-1 text-slate-300">
 			{

@@ -4,6 +4,7 @@ export const data = {
   hero: {
     title: "Jose Negrin",
     subTitle: "Hello! 😁 My name is José, I'm front-end developer with 7 years of experience, and more than programming, I love developing products that users love to use.",
+    image: "/src/images/profile-img.png",
     id: 'hero',
     linkedInUrl: LINKEDIN_URL,
     githubUrl: GITHUB_URL

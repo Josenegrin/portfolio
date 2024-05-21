@@ -1,19 +1,20 @@
 ---
 import Github from "@/icons/Github.astro"
 import Linkedin from "@/icons/Linkedin.astro"
-import profileImage from "@/images/profile-img.png"
 import { Image } from "astro:assets"
 import AnchorButton from "./AnchorButton.astro"
 
 const { props } = Astro.props
-const { title, subTitle, id, linkedInUrl, githubUrl } = props
+const { title, subTitle, image, id, linkedInUrl, githubUrl } = props
 ---
 
 <div class="hero mb-6 min-h-screen" id={id}>
 	<div class="hero-content mx-auto flex-col text-center">
 		<Image
 			class="size-80 rounded-full border-2 border-white shadow-2xl"
-			src={profileImage}
+			src={image}
+			width={300}
+			height={300}
 			alt="Profile picture"
 			loading="lazy"
 		/>

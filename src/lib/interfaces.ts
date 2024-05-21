@@ -1,6 +1,7 @@
 export interface HeroInterface {
     title: string;
     subTitle: string;
+    image: string;
     id: string;
     linkedInUrl: string;
     githubUrl: string;
