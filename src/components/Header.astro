@@ -1,11 +1,12 @@
 ---
 import { navigation } from "@/lib/navigation"
+import DynamicImage from "./DynamicImage.astro"
 ---
 
 <nav class="navbar bg-base-300 py-5">
 	<div class="mx-auto w-11/12 md:w-10/12">
 		<div class="flex-1">
-			<img src="/src/images/logo.svg" class="h-14" alt="Logo" />
+			<DynamicImage image="/src/assets/images/logo.svg" alt="Logo" height={50} />
 		</div>
 		<ul class="menu menu-horizontal px-1 text-slate-300">
 			{

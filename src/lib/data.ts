@@ -4,7 +4,7 @@ export const data = {
   hero: {
     title: "Jose Negrin",
     subTitle: "Hello! 😁 My name is José, I'm front-end developer with 7 years of experience, and more than programming, I love developing products that users love to use.",
-    image: "/src/images/profile-img.png",
+    image: "/src/assets/images/profile-img.png",
     id: 'hero',
     linkedInUrl: LINKEDIN_URL,
     githubUrl: GITHUB_URL
@@ -67,7 +67,7 @@ export const data = {
     data: [
       {
         title: "Netflix Clone",
-        image: "/src/images/netflix-project.png",
+        image: "/src/assets/images/netflix-project.png",
         description: "Project developed using TypeScript, Next.js, Node.js, and Tailwind CSS. The main objective of this project is to create a full-stack application using Node.js for building the APIs and implementing server-side rendering (SSR) for optimized loading.",
         stack: ["Next", "React", "Node", "TypeScript"],
         githubUrl: "https://github.com/Josenegrin/netflix-clone",
