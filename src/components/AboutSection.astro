@@ -1,0 +1,14 @@
+---
+import User from "@/icons/User.astro"
+import Title from "./Title.astro"
+
+const { props } = Astro.props
+const { title, id, description } = props
+---
+
+<section class="mb-6" id={id}>
+	<Title title={title}>
+		<User />
+	</Title>
+	<p class="text-slate-400">{description}</p>
+</section>

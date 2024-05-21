@@ -1,9 +1,18 @@
 ---
-import Layout from '@/layouts/Layout.astro';
+import AboutSection from "@/components/AboutSection.astro"
+import Hero from "@/components/Hero.astro"
+import WorkSection from "@/components/JobSection.astro"
+import PersonalProjectsSection from "@/components/PersonalProjectsSection.astro"
+import Layout from "@/layouts/Layout.astro"
+import { data } from "@/lib/data"
+import "../styles/bases.css"
+
+const { hero, jobs, personalProjects, about } = data
 ---
 
-<Layout title="Welcome to Astro.">
-	<main>
-		<h1>Welcome</h1>
-	</main>
+<Layout title="Jose Negrin portfolio">
+	<Hero props={hero} />
+	<WorkSection props={jobs} />
+	<PersonalProjectsSection props={personalProjects} />
+	<AboutSection props={about} />
 </Layout>

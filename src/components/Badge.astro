@@ -1,0 +1,13 @@
+---
+interface Props {
+	text: string
+}
+
+const { text } = Astro.props
+---
+
+<div class="badge badge-ghost p-3">
+	<span class="text-slate-300">
+		{text}
+	</span>
+</div>

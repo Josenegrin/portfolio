@@ -1,0 +1,18 @@
+---
+import Work from "@/icons/Work.astro"
+import type { JobsDataInterface } from "@/lib/interfaces"
+import WorkCard from "./JobCard.astro"
+import Title from "./Title.astro"
+
+const { props } = Astro.props
+const { title, id, data } = props
+---
+
+<section class="mb-6" id={id}>
+	<Title title={title}>
+		<Work />
+	</Title>
+	<ul class="timeline timeline-vertical timeline-snap-icon max-md:timeline-compact">
+		{data.map((job: JobsDataInterface) => <WorkCard props={job} />)}
+	</ul>
+</section>

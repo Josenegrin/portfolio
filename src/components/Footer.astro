@@ -1,3 +1,21 @@
-<footer>
-  <span>This is the footer</span>
+---
+import Github from "@/icons/Github.astro"
+import Linkedin from "@/icons/Linkedin.astro"
+import { GITHUB_URL, LINKEDIN_URL } from "@/lib/constants"
+---
+
+<footer class="bg-neutral py-10 text-neutral-content">
+	<section class="mx-auto flex w-11/12 items-center justify-between md:w-10/12">
+		<aside class="flex items-center justify-start">
+			<p>© 2024 - Jose Negrin</p>
+		</aside>
+		<nav class="flex items-center justify-end gap-4">
+			<a class="transition delay-150 ease-in-out hover:text-white" href={`${LINKEDIN_URL}`}
+				><Linkedin /></a
+			>
+			<a class="transition delay-150 ease-in-out hover:text-white" href={`${GITHUB_URL}`}
+				><Github /></a
+			>
+		</nav>
+	</section>
 </footer>

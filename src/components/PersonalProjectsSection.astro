@@ -1,0 +1,17 @@
+---
+import Laptop from "@/icons/Laptop.astro"
+import type { PersonalProjectsDataInterface } from "@/lib/interfaces"
+import Card from "./Card.astro"
+import Title from "./Title.astro"
+const { props } = Astro.props
+const { title, id, data } = props
+---
+
+<section class="mb-6" id={id}>
+	<Title title={title}>
+		<Laptop />
+	</Title>
+	<div class="my-10 flex items-center justify-center">
+		{data.map((project: PersonalProjectsDataInterface) => <Card props={project} />)}
+	</div>
+</section>

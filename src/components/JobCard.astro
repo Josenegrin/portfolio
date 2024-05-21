@@ -1,0 +1,21 @@
+---
+const { props } = Astro.props
+const { role, company, time, description } = props
+---
+
+<li>
+	<hr />
+	<div class="timeline-middle relative">
+		<div class="absolute -start-1.5 mt-1.5 size-3 rounded-full border border-gray-900 bg-red-400">
+		</div>
+	</div>
+	<div class="timeline-end mb-10 ml-5">
+		<h3 class="text-lg font-black tracking-wide text-slate-300">{role}</h3>
+		<h4 class="text-lg font-semibold text-slate-300">{company}</h4>
+		<time class="font-mono font-light italic text-slate-400">{time}</time>
+		<ul class="mt-2 list-disc text-slate-400">
+			{description.map((text: string) => <li>{text}</li>)}
+		</ul>
+	</div>
+	<hr />
+</li>
